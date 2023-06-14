@@ -41,7 +41,7 @@ def capture(Gloabl,e_keypad,e_unlock,q):
     video_capture.release()
     cv2.destroyAllWindows()
 def process(Global,q,e_keypad,e_unlock):
-    data=pickle.loads(open("encodings.pickle", "rb").read())
+    data=pickle.loads(open("end.pickle", "rb").read())
     while not Global.is_exit:
         e_keypad.wait()
         e_unlock.wait()
